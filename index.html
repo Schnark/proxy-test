@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Proxy Test</title>
+<meta name="viewport" content="width=device-width">
+<script src="proxy.js" defer></script>
+</head><body>
+<form id="form">
+<p><label>URL: <input id="url" type="url"></label></p>
+<p><label>Proxy: <input id="proxy" type="url" list="proxy-suggest"></label></p>
+<datalist id="proxy-suggest">
+<option>https://cors-anywhere.herokuapp.com/</option>
+<option>https://jsonp.afeld.me/?url=</option>
+<option>https://api.codetabs.com/v1/proxy?quest=</option>
+<option>https://goxcors.appspot.com/cors?method=GET&amp;url=</option>
+<option>https://jsonproxy.herokuapp.com/?url=</option>
+<option>https://thingproxy.freeboard.io/fetch/</option>
+<option>https://yacdn.org/proxy/</option>
+<option>https://cors-proxy.htmldriven.com/?url=</option>
+<option>https://crossorigin.me/</option>
+<option>http://cors.io/?</option>
+<option>http://gobetween.oklabs.org/</option>
+<option>http://www.whateverorigin.org/</option>
+<option>https://api.allorigins.win/raw?url=</option>
+</datalist>
+<p><label><input id="text" type="checkbox" checked> As text</label></p>
+<p><button>Run test</button>
+</form>
+<div id="output"></div>
+<pre id="headers"></pre>
+</body></html>
